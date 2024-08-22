@@ -5,11 +5,13 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavHostController
 
-@Preview(showBackground = true)
+//@Preview(showBackground = true)
 @Composable()
-fun TypeOfCompany() {
+fun TypeOfCompanyScreen(
+    navController: NavHostController
+) {
     Column(
         modifier = Modifier.fillMaxSize()
     ){

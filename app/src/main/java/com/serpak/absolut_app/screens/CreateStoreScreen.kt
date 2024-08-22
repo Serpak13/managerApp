@@ -23,10 +23,13 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 
-@Preview(showBackground = true)
+//@Preview(showBackground = true)
 @Composable()
-fun CreateStoreScreen() {
+fun CreateStoreScreen(
+    navController: NavHostController
+) {
 
     var textStateInputCompanyName by remember { mutableStateOf("") }
     var textStateInputCountryAndCity by remember { mutableStateOf("") }

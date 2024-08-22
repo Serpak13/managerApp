@@ -10,6 +10,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.serpak.absolut_app.navigation.AppNavigation
 import com.serpak.absolut_app.screens.CreateStoreScreen
 import com.serpak.absolut_app.ui.theme.Absolut_appTheme
 
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    CreateStoreScreen()
+                    AppNavigation()
                 }
             }
         }

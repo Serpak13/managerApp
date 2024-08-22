@@ -21,11 +21,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import androidx.navigation.NavHostController
 
 
-@Preview(showBackground = true)
+//@Preview(showBackground = true)
 @Composable
-fun WelcomeScreen(){
+fun WelcomeScreen(
+    navController:NavHostController
+){
 
     var textStateInputName by remember{ mutableStateOf("")}
     var textStateInputPhoneNumber by remember{ mutableStateOf("")}
