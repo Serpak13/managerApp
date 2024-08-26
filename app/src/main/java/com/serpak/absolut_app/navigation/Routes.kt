@@ -1,6 +1,7 @@
 package com.serpak.absolut_app.navigation
 
 object Routes {
+    const val AUTH_SCREEN = "auth_screen"
     const val WELCOME_SCREEN = "welcome_screen"
     const val CREATE_STORE_SCREEN = "create_store_screen"
     const val TYPE_OF_COMPANY_SCREEN = "type_of_company_screen"

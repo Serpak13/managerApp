@@ -6,13 +6,6 @@ plugins {
 
 }
 
-apollo {
-    service("service"){
-        schemaFile.set(file("/src/main/graphql/schema.sdl"))
-        packageName.set("com.serpak.absolut_app")
-    }
-}
-
 android {
     namespace = "com.serpak.absolut_app"
     compileSdk = 34

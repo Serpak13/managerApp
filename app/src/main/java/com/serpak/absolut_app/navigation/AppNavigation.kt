@@ -18,6 +18,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.serpak.absolut_app.R
 import com.serpak.absolut_app.navigation.Routes
+import com.serpak.absolut_app.screens.AuthScreen
 import com.serpak.absolut_app.screens.CompletedScreen
 import com.serpak.absolut_app.screens.CreateStoreScreen
 import com.serpak.absolut_app.screens.SizeOfEstablishmentScreen
@@ -92,6 +93,9 @@ fun AppNavigation() {
             startDestination = screens[0],
             modifier = Modifier.padding(it)
         ) {
+            composable(Routes.AUTH_SCREEN){
+                AuthScreen(navController = navController)
+            }
             composable(Routes.WELCOME_SCREEN) {
                 WelcomeScreen(navController = navController)
             }
